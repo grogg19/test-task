@@ -386,6 +386,7 @@
     </style>
 </head>
 <body class="antialiased">
+<header class="px-6 py-4 mx-auto bg-gray-100 dark:bg-gray-900 dark:text-white">Local Phone: 8-800-DIGITS</header>
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div class="justify-center pt-8 sm:justify-start sm:pt-0 dark:text-white">
@@ -425,5 +426,6 @@
         </div>
     </div>
 </div>
+<footer class="px-6 py-4 mx-auto bg-gray-100 dark:bg-gray-900 dark:text-white">Local Phone: 8-800-DIGITS</footer>
 </body>
 </html>
