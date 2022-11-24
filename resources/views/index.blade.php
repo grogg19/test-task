@@ -390,13 +390,38 @@
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div class="justify-center pt-8 sm:justify-start sm:pt-0 dark:text-white">
             <h2>Задача 1: Лесенка</h2>
-            @foreach ($numbers as $number)
+            @foreach($numbers as $number)
                 <div>
-                    @foreach($number as $n)
-                        {{ $n }}
+                    @foreach($number as $item)
+                        {{ $item }}
                     @endforeach
                 </div>
             @endforeach
+        </div>
+    </div>
+    <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+        <div class="justify-center pt-8 sm:justify-start sm:pt-0 dark:text-white">
+            <h2>Задача 2: Массивы</h2>
+            <table>
+                @foreach($arrays as $keyRow => $row)
+                    @if($loop->first)
+                        <tr>
+                            <th colspan="{{ count($row)}}"></th>
+                            <th>Сумма строки</th>
+                        </tr>
+                    @endif
+                    <tr>
+                        <td>
+                            @if($loop->last)
+                                Сумма столбца
+                            @endif
+                        </td>
+                        @foreach($row as $item)
+                            <td>{{ $item }}</td>
+                        @endforeach
+                    </tr>
+                @endforeach
+            </table>
         </div>
     </div>
 </div>
