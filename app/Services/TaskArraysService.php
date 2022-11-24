@@ -75,4 +75,18 @@ class TaskArraysService
         $this->columns = $columns;
     }
 
+    /**
+     * Установка Количества строк и столбцов в массиве
+     *
+     * @param int $rows
+     * @param int $columns
+     *
+     * @return void
+     */
+    public function setSizeOfArray(int $rows, int $columns): void
+    {
+        $this->setColumns($columns);
+        $this->setRows($rows);
+    }
+
 }
