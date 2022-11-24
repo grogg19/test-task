@@ -14,7 +14,7 @@ class TaskArraysService
      * @param int $rows
      * @param int $columns
      */
-    public function __construct(int $rows, int $columns)
+    public function __construct(int $rows = 5, int $columns = 7)
     {
         $this->rows    = $rows;
         $this->columns = $columns;
@@ -53,6 +53,26 @@ class TaskArraysService
         }
 
         return $matrixNumbers;
+    }
+
+    /**
+     * Установка количества строк в массиве
+     *
+     * @param int $rows
+     */
+    public function setRows(int $rows): void
+    {
+        $this->rows = $rows;
+    }
+
+    /**
+     * Установка количества столбцов в массиве
+     *
+     * @param int $columns
+     */
+    public function setColumns(int $columns): void
+    {
+        $this->columns = $columns;
     }
 
 }
