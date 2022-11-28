@@ -16,6 +16,9 @@ class TaskFrontService
      */
     public GeoLocationService $geoLocationService;
 
+    /**
+     * Номера телефонов для примера
+     */
     public const PHONE_NUMBERS = [
         'Moscow'        => '8-800-123-45-67',
         'St Petersburg' => '8-800-234-56-78',
