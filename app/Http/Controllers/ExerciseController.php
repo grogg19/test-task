@@ -22,8 +22,9 @@ class ExerciseController extends Controller
     {
         $numbers = $taskStairsService->getStructuredNumbersFromInterval(1, 100);
 
-        $taskArraysService->setSizeOfArray(5, 7);
-        $arrays      = $taskArraysService->getStructuredArraysFromInterval(1, 1000);
+        $taskArraysService->setSizeOfArray(5, 7); // создаем массив 5х7
+        $arrays = $taskArraysService->getStructuredArraysFromInterval(1, 1000);
+
         $phoneNumber = $taskFrontService->getPhoneNumberByCity();
 
         return view('index', ['numbers' => $numbers, 'arrays' => $arrays, 'phone_number' => $phoneNumber]);
