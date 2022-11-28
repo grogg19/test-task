@@ -41,3 +41,5 @@ services:
       default:
         aliases:
           - test-task_default
+
+    #command: cp /var/www/.env.example /var/www/.env
